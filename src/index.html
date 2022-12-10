@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Filmes</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="bg-screen font-serif">
+        <section class="flex flex-col items-center pt-16 pb-16">
+            <h1 class="text-text text-4xl mb-12">Filmes Populares</h1>
+            <input class="mb-8 h-[60px] w-[600px] bg-card border rounded-2xl" type="text" id="txtSearch"
+                placeholder="Digite algum filme para pesquisar">
+            <img class="absolute top-[10.8rem] left-[61rem]" src="img/search-icon.svg" alt="Pesquisar">
+            <div>
+                <input id="searchFavorites" class="pr-3" type="checkbox">
+                <label for="searchFavorites" class="text-text mb-16">Mostrar meus filmes favoritos apenas</label>
+            </div>
+        </section>
+        <div class="flex items-center w-[1200px] h-[201px] bg-card m-auto">
+            <div class="flex items-center w-[600px]">
+                <img class="mt-7 ml-10" src="img/endgame.png" alt="Filme Vingadores">
+                <ul>
+                    <h3 class="text-text">Avengers Endgame (2019)</h3>
+                    <li class="mt-1">
+                        &#11088;
+                        <span class="text-text">9.2</span>
+                    </li>
+                    <li class="mt-1">
+                        &#10084;
+                        <span class="text-text">Favoritar</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-[600px]">
+                <p class="text-xs text-text">Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar
+                    com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida,
+                    Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
