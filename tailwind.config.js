@@ -9,6 +9,7 @@ module.exports = {
       "screen": "#17162E",
       "card": "#1D1C3B",
       "text": "#FFFFFF",
+      "coracao": "#FF0000",
       "description": "#ACACAC",
     }
   },
