@@ -5,117 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciador de Filmes</title>
-    <link href="/dist/output.css" rel="stylesheet">
+    <title>Filmes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="bg-screen">
-    <main class="bg-screen font-serif">
-        <section class="flex flex-col items-center pt-16 pb-16">
-            <h1 class="text-text text-4xl mb-12">Filmes Populares</h1>
-            <input class="mb-8 h-[60px] w-[600px] bg-card border rounded-2xl" type="text" id="txtSearch"
-                placeholder="Digite algum filme para pesquisar">
-            <img class="absolute top-[10.8rem] left-[61rem]" src="img/search-icon.svg" alt="Pesquisar">
-            <div>
-                <input id="searchFavorites" class="pr-3" type="checkbox">
-                <label for="searchFavorites" class="text-text mb-16">Mostrar meus filmes favoritos apenas</label>
-            </div>
-        </section>
-        <div class="flex items-center w-[1200px] h-[201px] bg-card m-auto">
-            <div class="flex items-center w-[750px]">
-                <img class="mt-7 ml-10" src="img/endgame.png" alt="Filme Vingadores">
-                <ul>
-                    <h3 class="text-text">Avengers Endgame (2019)</h3>
-                    <div class="flex">
-                        <li class="mt-1">
-                            &#11088;
-                            <span class="text-text">9.2</span>
-                        </li>
-                        <li class="mt-1 ml-12">
-                            <span class="favoritar cursor-pointer duration-500">&#10084;</span>
-                            <span class="text-text">Favoritar</span>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-            <div class="w-[300px]">
-                <p class="text-xs text-text leading-6">Após Thanos eliminar metade das criaturas vivas, os Vingadores
-                    têm de lidar
-                    com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida,
-                    Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</p>
-            </div>
+<<body>
+    <main>
+        <h2>Filmes Populares</h2>
+        <div class="input-container">
+            <input type="text" name="movie-name" id="movie-name" placeholder="Digite algum filme para pesquisar...">
+            <img src="images/search-icon.svg" alt="Ícone de pesquisa" class="searchIcon">
         </div>
-        <div class="flex items-center w-[1200px] h-[201px] bg-card m-auto mt-10">
-            <div class="flex items-center w-[750px]">
-                <img class="mt-7 ml-10" src="img/batman.png" alt="Filme Vingadores">
-                <ul>
-                    <h3 class="text-text">Batman (2022)</h3>
-                    <div class="flex">
-                        <li class="mt-1">
-                            &#11088;
-                            <span class="text-text">9.2</span>
-                        </li>
-                        <li class="mt-1 ml-12">
-                            <span class="favoritar cursor-pointer duration-500">&#10084;</span>
-                            <span class="text-text">Favoritar</span>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-            <div class="w-[300px]">
-                <p class="text-xs text-text leading-6">Após dois anos espreitando as ruas como Batman, Bruce Wayne se
-                    encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante
-                    solitário se estabelece como a personificação da vingança para a população.</p>
-            </div>
+        <div class="showOnlyFavorites">
+            <input type="checkbox" name="onlyFavorites" id="onlyFavorites">
+            <label for="onlyFavorites">Mostrar apenas meus filmes favoritos</label>
         </div>
-        <div class="flex items-center w-[1200px] h-[201px] bg-card m-auto mt-10">
-            <div class="flex items-center w-[750px]">
-                <img class="mt-7 ml-10" src="img/doutor-estranho.png" alt="Filme Vingadores">
-                <ul>
-                    <h3 class="text-text">Doctor Strange in the Multiverse of Madness</h3>
-                    <div class="flex">
-                        <li class="mt-1">
-                            &#11088;
-                            <span class="text-text">9.2</span>
-                        </li>
-                        <li class="mt-1 ml-12">
-                            <span class="favoritar cursor-pointer duration-500">&#10084;</span>
-                            <span class="text-text">Favoritar</span>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-            <div class="w-[300px]">
-                <p class="text-xs text-text leading-6">Além de receber ajuda de novos aliados místicos e outros já
-                    conhecidos do público, o personagem atravessa as realidades alternativas incompreensíveis e
-                    perigosas do Multiverso para enfrentar um novo e misterioso adversário.</p>
-            </div>
-        </div>
-        <div class="flex items-center w-[1200px] h-[201px] bg-card m-auto mt-10">
-            <div class="flex items-center w-[750px]">
-                <img class="mt-7 ml-10" src="img/avatar.png" alt="Filme Vingadores">
-                <ul>
-                    <h3 class="text-text">Avatar (2009)</h3>
-                    <div class="flex">
-                        <li class="mt-1">
-                            &#11088;
-                            <span class="text-text">9.2</span>
-                        </li>
-                        <li class="mt-1 ml-12">
-                            <span class="favoritar cursor-pointer duration-500">&#10084;</span>
-                            <span class="text-text">Favoritar</span>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-            <div class="w-[300px]">
-                <p class="text-xs text-text leading-6">Após formar uma família, Jake Sully e Ney'tiri fazem de tudo para
-                    ficarem juntos. No entanto, eles devem sair de casa e explorar as regiões de Pandora quando uma
-                    antiga ameaça ressurge, e Jake deve travar uma guerra difícil contra os humanos.</p>
-            </div>
-        </div>
+        <div class="movies"></div>
     </main>
-</body>
-<script src="index.js"></script>
+    <script src="index.js"></script>
+    </body>
 
 </html>
